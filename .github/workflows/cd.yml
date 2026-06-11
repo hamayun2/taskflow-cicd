@@ -7,7 +7,7 @@ jobs:
   deploy-on-render:
     runs-on: ubuntu-latest
     environment:
-      name: "development-env"
+      name: "development"
       url: https://spring26w13at1-v01.onrender.com
     steps:
       - name: Welcome Step

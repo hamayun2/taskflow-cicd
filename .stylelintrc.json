@@ -2,7 +2,6 @@
   "extends": "stylelint-config-standard",
   "rules": {
     "selector-type-case": "lower",
-    "indentation": 2,
     "string-quotes": "double"
   }
 }
