@@ -1,7 +1,6 @@
 {
   "extends": "stylelint-config-standard",
   "rules": {
-    "selector-type-case": "lower",
-    "string-quotes": "double"
+    "selector-type-case": "lower"
   }
 }
