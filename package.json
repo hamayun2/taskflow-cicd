@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "htmlhint": "^latest",
+    "stylelint": "^latest",
+    "parcel": "^latest"
+  }
+}

@@ -1,0 +1,30 @@
+name: wf_pr_develop
+on:
+  pull_request:
+    branches:
+      - develop
+jobs:
+  pr_dev_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone Repository
+        uses: actions/checkout@v6
+      - name: Install Project Dependencies
+        run: npm ci
+      - name: Lint HTML Files
+        run: npx htmlhint **/*.html
+      - name: Lint CSS Files
+        run: npx stylelint **/*.css
+      - name: Build Website
+        run: npx parcel build "source/index.html" --dist-dir "dist" --public-url "/"
+      - name: Build Docker Image
+        run: docker image build . -t tajhussain7/workflow-cicd:v01
+      - name: See the Image
+        run: docker image ls
+      - name: Login to Docker Hub
+        uses: docker/login-action@v4
+        with:
+          username: ${{ vars.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Push Docker Image on the Docker Hub
+        run: docker image push tajhussain7/workflow-cicd:v01
