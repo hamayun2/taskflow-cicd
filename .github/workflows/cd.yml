@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: "development"
-      url: https://spring26w13at1-v01.onrender.com
+      url: https://taskflow-cicd-nmkh.onrender.com
     steps:
       - name: Welcome Step
         run: echo "Deploying On Render"
