@@ -1,0 +1,19 @@
+{
+  "name": "taskflow-cicd",
+  "version": "1.0.0",
+  "description": "Task management web app with CI/CD pipeline",
+  "scripts": {
+    "build": "parcel build \"source/index.html\" --dist-dir \"dist\" --public-url \"/\"",
+    "lint:html": "htmlhint **/*.html",
+    "lint:css": "stylelint **/*.css"
+  },
+  "devDependencies": {
+    "htmlhint": "^1.9.2",
+    "stylelint": "^16.1.0",
+    "stylelint-config-standard": "^36.0.0",
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "ci": "^2.3.0"
+  }
+}

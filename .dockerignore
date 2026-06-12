@@ -1,0 +1,14 @@
+.git
+.gitignore
+.github
+node_modules
+npm-debug.log
+yarn-error.log
+
+dist
+.cache
+.parcel-cache
+
+.env
+.env.local
+.env.*.local
