@@ -79,6 +79,19 @@ header {
 .nav-links a.active {
   color: var(--primary-color);
 }
+.add-task-nav {
+  margin-top: 10px;
+}
+
+.add-task-nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.add-task-nav a:hover {
+  text-decoration: underline;
+}
 
 /* ===== Main Content ===== */
 
@@ -224,19 +237,6 @@ footer {
   text-align: center;
 }
 
-.add-task-nav {
-  margin-top: 10px;
-}
-
-.add-task-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-.add-task-nav a:hover {
-  text-decoration: underline;
-}
 
 .add-task-main {
   padding: 20px;
