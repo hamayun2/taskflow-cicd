@@ -68,6 +68,11 @@ header {
   gap: 2rem;
 }
 
+.add-task-nav {
+  margin-top: 10px;
+}
+
+/* 1. Base Link Styles first */
 .nav-links a {
   color: white;
   text-decoration: none;
@@ -75,19 +80,20 @@ header {
   font-weight: 500;
 }
 
+.add-task-nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* 2. Pseudo-states (:hover, :active) last */
 .nav-links a:hover,
 .nav-links a.active {
   color: var(--primary-color);
 }
 
-.add-task-nav {
-  margin-top: 10px;
-}
-
-.add-task-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
+.add-task-nav a:hover {
+  text-decoration: underline;
 }
 
 .add-task-nav a:hover {
