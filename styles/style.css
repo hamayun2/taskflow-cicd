@@ -75,10 +75,21 @@ header {
   font-weight: 500;
 }
 
+.add-task-nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.add-task-nav a:hover {
+  text-decoration: underline;
+}
+
 .nav-links a:hover,
 .nav-links a.active {
   color: var(--primary-color);
 }
+
 .add-task-nav {
   margin-top: 10px;
 }
