@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskFlow - Completed Tasks</title>
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>TaskFlow</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="task-list.html">Tasks</a></li>
+                    <li><a href="add-task.html">Add Task</a></li>
+                    <li><a href="completed-tasks.html" class="active">Completed</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero completed-hero">
+                <div class="hero-content">
+                    <h2>✅ Completed Tasks</h2>
+                    <p>View all your successfully completed tasks</p>
+                </div>
+            </section>
+
+            <section class="completed-tasks-section">
+                <div class="filters">
+                    <button class="btn btn-filter active">All</button>
+                    <button class="btn btn-filter">This Week</button>
+                    <button class="btn btn-filter">This Month</button>
+                    <button class="btn btn-filter">This Year</button>
+                </div>
+
+                <div class="completed-stats">
+                    <div class="stat-card">
+                        <h3>Total Completed</h3>
+                        <p class="stat-number">24</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Completion Rate</h3>
+                        <p class="stat-number">85%</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>On-Time Tasks</h3>
+                        <p class="stat-number">18</p>
+                    </div>
+                </div>
+
+                <div class="tasks-list completed-tasks-list">
+                    <!-- Task 1 -->
+                    <div class="task-card completed">
+                        <div class="task-header">
+                            <h3>📝 Complete project documentation</h3>
+                            <span class="badge completed-badge">Completed</span>
+                        </div>
+                        <p class="task-description">Write comprehensive documentation for the TaskFlow project including
+                            setup, usage, and API references.</p>
+                        <div class="task-meta">
+                            <span class="completion-date">✅ Completed: June 10, 2026</span>
+                            <span class="due-date">📅 Original Due: June 12, 2026</span>
+                        </div>
+                        <div class="task-actions">
+                            <button class="btn btn-sm btn-view">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Task 2 -->
+                    <div class="task-card completed">
+                        <div class="task-header">
+                            <h3>🐛 Fix navigation bar links</h3>
+                            <span class="badge completed-badge">Completed</span>
+                        </div>
+                        <p class="task-description">Update all navigation links to properly connect between all pages in
+                            the application.</p>
+                        <div class="task-meta">
+                            <span class="completion-date">✅ Completed: June 9, 2026</span>
+                            <span class="due-date">📅 Original Due: June 10, 2026</span>
+                        </div>
+                        <div class="task-actions">
+                            <button class="btn btn-sm btn-view">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Task 3 -->
+                    <div class="task-card completed">
+                        <div class="task-header">
+                            <h3>🎨 Style the completed tasks page</h3>
+                            <span class="badge completed-badge">Completed</span>
+                        </div>
+                        <p class="task-description">Add CSS styles to make the completed tasks page visually appealing
+                            and consistent with the rest of the site.</p>
+                        <div class="task-meta">
+                            <span class="completion-date">✅ Completed: June 8, 2026</span>
+                            <span class="due-date">📅 Original Due: June 15, 2026</span>
+                        </div>
+                        <div class="task-actions">
+                            <button class="btn btn-sm btn-view">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Task 4 -->
+                    <div class="task-card completed early">
+                        <div class="task-header">
+                            <h3>🚀 Deploy to GitHub Pages</h3>
+                            <span class="badge completed-badge early-badge">Early Completion 🎉</span>
+                        </div>
+                        <p class="task-description">Set up and deploy the TaskFlow application to GitHub Pages for live
+                            preview.</p>
+                        <div class="task-meta">
+                            <span class="completion-date">✅ Completed: June 5, 2026</span>
+                            <span class="due-date">📅 Original Due: June 20, 2026</span>
+                        </div>
+                        <div class="task-actions">
+                            <button class="btn btn-sm btn-view">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 TaskFlow. All rights reserved.</p>
+            <p>Built with CI/CD using GitHub Actions and Docker</p>
+        </footer>
+    </div>
+</body>
+
+</html>
