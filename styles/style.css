@@ -290,7 +290,7 @@ footer {
 /* ===== COMPLETED TASKS PAGE STYLES ===== */
 
 .completed-hero {
-  background: linear-gradient(135deg, #27ae60, #2ecc71) !important;
+  background: linear-gradient(135deg, #27ae60, #2ecc71);
 }
 
 .filters {
@@ -316,7 +316,7 @@ footer {
 
 .btn-filter.active {
   background-color: var(--primary-color);
-  color: white;
+  color: #fff;
 }
 
 .completed-stats {
@@ -327,7 +327,7 @@ footer {
 }
 
 .stat-card {
-  background: white;
+  background-color: #fff;
   padding: 1.5rem;
   border-radius: var(--border-radius);
   text-align: center;
@@ -358,7 +358,7 @@ footer {
 }
 
 .task-card.completed {
-  background: white;
+  background-color: #fff;
   border-radius: var(--border-radius);
   padding: 1.2rem;
   box-shadow: var(--box-shadow);
