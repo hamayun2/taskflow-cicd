@@ -368,7 +368,7 @@ footer {
 
 .task-card.completed:hover {
   transform: translateX(5px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 15px rgb(0 0 0 / 15%);
 }
 
 .task-header {
@@ -419,7 +419,7 @@ footer {
   color: var(--text-light);
 }
 
-@media (max-width: 768px) {
+@media (width <=768px) {
   .task-header {
     flex-direction: column;
     align-items: flex-start;
