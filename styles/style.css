@@ -290,10 +290,9 @@ footer {
 /* ===== COMPLETED TASKS PAGE STYLES ===== */
 
 .completed-hero {
-  background: linear-gradient(135deg, #27ae60, #2ecc71);
+  background: linear-gradient(135deg, #27ae60, #2ecc71) !important;
 }
 
-/* Filters */
 .filters {
   display: flex;
   gap: 1rem;
@@ -320,7 +319,6 @@ footer {
   color: white;
 }
 
-/* Stats Cards */
 .completed-stats {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -353,7 +351,6 @@ footer {
   color: var(--primary-color);
 }
 
-/* Completed Tasks List */
 .completed-tasks-list {
   display: flex;
   flex-direction: column;
@@ -372,10 +369,6 @@ footer {
 .task-card.completed:hover {
   transform: translateX(5px);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-}
-
-.task-card.completed.early {
-  border-left-color: #f39c12;
 }
 
 .task-header {
@@ -404,11 +397,6 @@ footer {
   color: #27ae60;
 }
 
-.early-badge {
-  background-color: #fdebd0;
-  color: #e67e22;
-}
-
 .task-description {
   color: var(--text-light);
   margin-bottom: 0.8rem;
@@ -431,21 +419,6 @@ footer {
   color: var(--text-light);
 }
 
-.btn-sm {
-  padding: 0.4rem 1rem;
-  font-size: 0.85rem;
-}
-
-.btn-view {
-  background-color: var(--primary-color);
-  color: white;
-}
-
-.btn-view:hover {
-  background-color: #2980b9;
-}
-
-/* Responsive */
 @media (max-width: 768px) {
   .task-header {
     flex-direction: column;
