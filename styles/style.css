@@ -319,6 +319,53 @@ footer {
   color: #fff;
 }
 
+/* ===== TASK LIST PAGE STYLES ===== */
+
+.task-list-hero {
+  background: linear-gradient(135deg, #1abc9c, #16a085);
+}
+
+.task-list-section {
+  background-color: white;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.task-table-wrapper {
+  overflow-x: auto;
+}
+
+.task-table {
+  min-width: 700px;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.task-table thead {
+  background-color: var(--dark-bg);
+  color: white;
+}
+
+.task-table th,
+.task-table td {
+  padding: 1rem 1.2rem;
+  text-align: left;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.task-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.task-table td {
+  color: var(--text-dark);
+}
+
+.task-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
 .completed-stats {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
